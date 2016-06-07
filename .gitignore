@@ -1,2 +1,5 @@
 cache/
+cache/*
+data/
 data/*
+.idea/

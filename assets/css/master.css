@@ -1,0 +1,31 @@
+h1 {
+    text-align: center;
+}
+
+.container {
+    display: block;
+    text-align: center;
+    margin: 2em;
+}
+
+.container input {
+    margin: 0.5em;
+}
+
+.chat-username {
+    font-weight: bold;
+}
+
+.chat-container {
+    display: block;
+    width: 500px;
+}
+
+.chat-container .msg-history {
+    background-color: #dfdede;
+    padding: 1em;
+}
+
+.chat-container .msg-history .user-msg {
+    margin: 1em;
+}

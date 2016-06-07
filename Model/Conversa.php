@@ -1,18 +1,24 @@
 <?php
 
-/**
- *
- */
 class Conversa
 {
-
-    public function adicionar($usuario, $texto)
+    function __construct()
     {
-        # code...
+        $this->arquivo = new Arquivo('chat.json');
+    }
+
+    public function adicionar(Usuario $usuario, $texto)
+    {
+        $message_information = [
+            'username' => $usuario->getNome(),
+            'texto' => $texto
+        ];
+
+        $this->arquivo->gravar($message_information, $usuario->getNome());
     }
 
     public function listar()
     {
-        # code...
+        return $this->arquivo->ler();
     }
 }

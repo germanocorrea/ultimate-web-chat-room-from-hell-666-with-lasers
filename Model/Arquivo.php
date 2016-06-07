@@ -6,7 +6,7 @@ class Arquivo
 
     function __construct($arquivo)
     {
-        $this->arquivo = $arquivo;
+        $this->arquivo = 'data/' . $arquivo;
 
         if (!file_exists('data/')) {
             if (!file_exists('data/' . $arquivo)) {
@@ -17,13 +17,17 @@ class Arquivo
         }
     }
 
-    public function gravar($dados)
+    public function gravar(Array $dados, $key)
     {
-        return file_put_contents($this->arquivo, $dados);
+        $file = $this->ler();
+
+        $file[$key] = $dados;
+
+        return file_put_contents($this->arquivo, json_encode($file));
     }
 
     public function ler()
     {
-        return file_get_contents($this->arquivo);
+        return json_decode(file_get_contents($this->arquivo), true);
     }
 }

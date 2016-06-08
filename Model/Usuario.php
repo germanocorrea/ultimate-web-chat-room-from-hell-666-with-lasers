@@ -22,11 +22,12 @@ class Usuario
                 return true;
             }
         }
+        return false;
     }
 
     public function autenticado()
     {
-        return $_SESSION['usuario'] != null && $_SESSION['senha'] != null;
+        return isset($_SESSION['usuario']) && $_SESSION['usuario'] != null && $_SESSION['senha'] != null;
     }
 
     public function criar($usuario, $senha, $email)

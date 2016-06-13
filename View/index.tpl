@@ -10,7 +10,6 @@
         <input type="text" name="username" id="username-register" placeholder="Username" class="input-tosco" required><br>
         <input type="email" name="email" id="email-register" placeholder="Email" class="input-tosco" required><br>
         <input type="password" name="password" id="password-register" placeholder="Password" class="input-tosco" required><br>
-        <input type="password" name="password-repeat" id="password-repeat-register" placeholder="Repeat your Password" class="input-tosco" required><br>
 
         <button type="submit" name="register-submit" id="submit-register" class="botao-tosco">Create New User</button>
     </form>

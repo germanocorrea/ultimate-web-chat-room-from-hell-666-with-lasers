@@ -1,4 +1,5 @@
 <?php
+require 'firstload.php';
 
 require 'Model/Arquivo.php';
 require 'Model/Conversa.php';

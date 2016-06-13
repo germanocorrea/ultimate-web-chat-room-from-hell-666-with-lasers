@@ -2,6 +2,8 @@
 
 class Conversa
 {
+    private $arquivo;
+
     function __construct()
     {
         $this->arquivo = new Arquivo('chat.json');
@@ -14,7 +16,7 @@ class Conversa
             'texto' => $texto
         ];
 
-        $this->arquivo->gravar($message_information, $usuario->getNome());
+        $this->arquivo->gravar($message_information, time());
     }
 
     public function listar()

@@ -1,31 +1,122 @@
-h1 {
-    text-align: center;
+@font-face {
+    font-family: 'Disolve';
+    src: url('../fonts/Disolve_regular.ttf');
+}
+@font-face {
+    font-family: 'Abel';
+    src: url('../fonts/abel.woff2');
+}
+body {
+    background: fixed;
+    background-image: url('../img/tron.jpg');
+    font-family: 'Abel', sans-serif;
+    font-size: 1.1em;
 }
 
+h2 {
+    text-align: center;
+    color: white;
+    font-family: 'Disolve', sans-serif;
+    text-shadow: 0 0 5px blueviolet, 0 0 5px blue;
+    font-size: 2em;
+}
+.logo {
+    display: block;
+    width: 30em;
+    height: auto;
+    margin-left: 40px;
+}
 .container {
     display: block;
     text-align: center;
-    margin: 2em;
+    margin: 2em 15em 2em 15em;
+}
+
+.inf {
+    display: block;
+    background-color: black;
+    color: white;
+    font-size: 1.3em;
+    padding: 1em;
+}
+
+.inf h2 {
+    font-family: 'Abel', sans-serif;
 }
 
 .container input {
     margin: 0.5em;
+    font-family: 'Abel', sans-serif;
+    font-size: 1.3em;
 }
 
 .chat-username {
     font-weight: bold;
+    color: darkseagreen;
+    border: 1px dotted darkred;
+    margin: 0.3em;
+    text-shadow: 0 0 5px #45ff00;
 }
 
 .chat-container {
     display: block;
     width: 500px;
+    float: right;
+    box-shadow: 0 0 10px blue, 0 0 10px #37ff00;
 }
 
 .chat-container .msg-history {
-    background-color: #dfdede;
+    background-color: black;
+    color: white;
+    border: 2px solid cadetblue;
     padding: 1em;
+    overflow: auto;
+    height: 200px;
 }
 
 .chat-container .msg-history .user-msg {
     margin: 1em;
+}
+
+.input-tosco {
+    color: white;
+    border: 2px solid darkslateblue;
+    background-color: black;
+    padding: 0.1em;
+    font-size: 1em;
+    margin: 0;
+    width: 75%;
+    text-shadow: 0 0 5px blueviolet, 0 0 5px blue;
+}
+
+.botao-tosco {
+    width: 22%;
+    margin: 0;
+    color: springgreen;
+    background: black;
+    font-size: 1em;
+    border: 2px solid darkblue;
+    text-shadow: 0 0 5px darkcyan, 0 0 5px #00fd7e;
+}
+.hidden {
+    display: none;
+}
+
+.logout {
+    width: 100%;
+}
+
+.chatinfos {
+    color: white;
+    background-color: black;
+    font-size: 0.8em;
+    padding: 0.5em;
+}
+
+.catinho {
+    width: 150px;
+    height: auto;
+    position: absolute;
+    left: 5em;
+    top: 70%;
 }
